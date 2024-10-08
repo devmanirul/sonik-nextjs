@@ -128,8 +128,8 @@ export default function Home() {
             <div className="w-full relative flex flex-col justify-center ">
               <div className="">
                 <h2 className="uppercase text-white text-[30px] md:text-[54px] font-semibold font-phudu mb-3 md:mb-6">
-                  your city's entertainment all <br />
-                  in one place
+                  {`your city's entertainment all <br />
+                  in one place`}
                 </h2>
                 <p className="font-medium text-sm md:text-xl text-white flex flex-col justify-center mt-5 mb-10 font-inter">
                   Discover your favorite events with ease
