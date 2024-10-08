@@ -12,6 +12,10 @@ module.exports = {
         "banner-img": "url('/bgsonik.png')",
         "entertainment-bg": "url('/bgdorakata.png')",
       },
+      fontFamily: {
+        phudu: ["Phudu", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],

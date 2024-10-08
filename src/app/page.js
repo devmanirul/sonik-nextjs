@@ -10,31 +10,42 @@ export default function Home() {
           <Image alt="sonik" src={"/sonik.png"} width={265} height={75} />
         </div>
         {/* sonik text image mobile*/}
-        <div className="md:hidden md:pt-[137px] pt-10 flex flex-row justify-center">
-          <Image alt="sonik" src={"/sonik.png"} width={162} height={46} />
+        <div className="md:hidden md:pt-[137px] pt-8 flex flex-row justify-center">
+          <Image alt="sonik" src={"/sonik.png"} width={120} height={40} />
         </div>
         {/* download sonik button */}
         <button className="flex flex-row items-center justify-start gap-1 md:gap-8 pl-4 md:pl-[117px] pb-4 md:pb-[117px]">
-          <h4 className="uppercase text-[40px] font-semibold">
+          <h4 className="uppercase font-phudu text-xl md:text-[40px] font-semibold">
             Download sonik
           </h4>
-          <Image
-            alt="arrow"
-            src={"/forward-arrow.png"}
-            width={58}
-            height={58}
-          />
+          <div className="hidden md:block">
+            <Image
+              alt="arrow"
+              src={"/forward-arrow.png"}
+              width={58}
+              height={58}
+            />
+          </div>
+          {/* mobile responsive arrow */}
+          <div className="block md:hidden">
+            <Image
+              alt="arrow"
+              src={"/forward-arrow.png"}
+              width={40}
+              height={40}
+            />
+          </div>
         </button>
       </section>
       {/* hero section end*/}
       {/* main start */}
-      <main className="bg-background-img bg-[#1A1A1A] md:pt-[260px] pb-16 md:pb-[123px] px-4 md:px-0">
+      <main className="bg-entertainment-bg bg-[#1A1A1A] md:pt-[260px] pb-16 md:pb-[123px] px-4 md:px-0">
         <section className="">
           {/* <!-- entertainment place --> */}
           <div className="flex md:flex-row flex-col-reverse justify-between gap-[140px] md:gap-[82px] md:pt-[74px] md:pl-[170px] md:pr-[139px] md:pb-[90px] py-20 md:py-0">
             {/* <!-- left card --> */}
 
-            <div className="w-full relative bg-black rounded-3xl z-10">
+            <div className="w-full relative bg-black rounded-3xl z-10 ">
               {/* love icon */}
               <div className="hidden md:block absolute -top-48 -left-8 z-30">
                 <Image
@@ -55,21 +66,21 @@ export default function Home() {
               </div>
               {/* icon for mobile start*/}
               {/* heart icon */}
-              <div className="md:hidden absolute -top-24 right-3 z-30 ">
+              <div className="md:hidden absolute -top-14 right-3 z-30 ">
                 <Image
                   alt="heart icon"
                   src={"/Vector1.png"}
-                  width={144}
-                  height={82}
+                  width={90}
+                  height={70}
                 />
               </div>
               {/* star icon */}
-              <div className="md:hidden absolute left-2 -bottom-20">
+              <div className="md:hidden absolute left-4 -bottom-12">
                 <Image
                   alt="heart icon"
                   src={"/Vector2.png"}
-                  width={109}
-                  height={133}
+                  width={85}
+                  height={70}
                 />
               </div>
               {/* icon for mobile end here */}
@@ -116,11 +127,11 @@ export default function Home() {
             {/* <!-- right card --> */}
             <div className="w-full relative flex flex-col justify-center ">
               <div className="">
-                <h2 className="uppercase text-white text-[30px] md:text-[54px] font-semibold font-phudu mb-3 md:mb-8">
+                <h2 className="uppercase text-white text-[30px] md:text-[54px] font-semibold font-phudu mb-3 md:mb-6">
                   your city's entertainment all <br />
                   in one place
                 </h2>
-                <p className="font-medium text-xl text-white flex flex-col justify-center mt-5 mb-36">
+                <p className="font-medium text-sm md:text-xl text-white flex flex-col justify-center mt-5 mb-10 font-inter">
                   Discover your favorite events with ease
                 </p>
                 {/* button container */}
@@ -130,8 +141,8 @@ export default function Home() {
                     <Image
                       alt="logo-apple"
                       src={"/logo-apple.png"}
-                      width={29}
-                      height={29}
+                      width={52}
+                      height={52}
                     />
                     <p className="text-2xl text-white">iOS</p>
                   </button>
@@ -156,6 +167,15 @@ export default function Home() {
                   height={192}
                 />
               </div>
+              {/* responsive earth icon */}
+              <div className="md:hidden block absolute  -top-9 right-12 z-30 ">
+                <Image
+                  alt="earth icon"
+                  src={"/Vector3.png"}
+                  width={70}
+                  height={50}
+                />
+              </div>
               {/* music icon */}
               <div className="hidden md:block absolute right-36 bottom-0">
                 <Image
@@ -163,6 +183,15 @@ export default function Home() {
                   src={"/Vector4.png"}
                   width={109}
                   height={133}
+                />
+              </div>
+              {/* responsive music icon */}
+              <div className="md:hidden block absolute right-48 -bottom-32">
+                <Image
+                  alt="music icon"
+                  src={"/Vector4.png"}
+                  width={70}
+                  height={50}
                 />
               </div>
             </div>
@@ -264,7 +293,7 @@ export default function Home() {
         {/* top */}
         <div className="flex flex-col md:flex-row gap-3 justify-between items-start md:items-center px-[88px] md:px-0">
           {/* left */}
-          <div className="w-full md:pl-[89px] ">
+          <div className="w-full md:pl-[89px]">
             <Image alt="sonik" src={"/sonik.png"} width={97} height={28} />
           </div>
           {/* middle */}
@@ -275,7 +304,7 @@ export default function Home() {
             </a>
           </div>
           {/* right */}
-          <div className="w-full flex flex-col gap-3 ">
+          <div className="w-full flex flex-col gap-3 right-0">
             <h5 className="font-bold text-base text-white">Social Icons</h5>
             <Image
               alt="instagram"
